@@ -1,15 +1,17 @@
 *{
     box-sizing: border-box;
+    font-family: 'Museo Sans Cyrl 500';
 }
-
-
 @import "media";
 @import "mixins";
 @import "variable";
 @import "../fonts/stylesheet.css";
 @import "general";
-h1{
-    background-color: aqua;
-    font-family: 'Museo Sans Cyrl 500';
-    font-weight: 700;
+
+.container{
+    max-width: 950px;
+    margin: 0 auto;
 }
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
