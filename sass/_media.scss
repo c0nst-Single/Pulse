@@ -27,6 +27,14 @@
             width: 230px;
         }
     }
+    .title{
+        &_left{
+            font-size: 30px;
+        }
+    }
+    .consultation{
+        padding: 100px 25px 92px 25px;
+    }
 }
 @media (max-width: 768px){
     .promo{
@@ -74,6 +82,15 @@
             margin-top: 25px;
         }
     }
+    .title{
+        &_left{
+            font-size: 23px;
+        }
+    }
+    .consultation__descr{
+        font-size: 17px;
+    }
+    
 }
 @media (max-width: 571px){
     .promo{
@@ -131,5 +148,14 @@
             font-size: 12px;
             margin-top: 20px;
         }
+    }
+    .consultation{
+        padding: 100px 0px 92px 0px;
+    }
+    .title_left{
+        font-size: 15px;
+    }
+    .consultation__descr{
+        font-size: 15px;
     }
 }
