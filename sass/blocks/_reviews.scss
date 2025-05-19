@@ -1,0 +1,40 @@
+.reviews{
+    padding-bottom: 70px;
+    &__items{
+        margin-top: 72px;
+    }
+    &__item:not(:first-child){
+        margin-top: 105px;
+    }
+    &__item{
+        display: flex;
+        &-img{
+            max-width: 170px;
+            max-height: 170px;
+            max-width: 100%;
+        }
+        &-repsonal{
+            margin-left: 62px;
+        }
+        &-repsonal_name{
+            color: #0d0d0d;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        &-repsonal_text{
+            color: #646464;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        &-repsonal_descr{
+            color: #0d0d0d;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19px;
+            span{
+                line-height: 40px;
+            }
+        }
+    }
+
+}

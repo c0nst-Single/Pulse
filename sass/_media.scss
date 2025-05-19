@@ -20,6 +20,17 @@
     .promo .promo_link{
         font-size: 14px;
     }    
+    .carousel .tns-item img{
+        max-width: 100%;
+        padding: 0 20px 0 20px;
+        width: 600px;
+    }
+    .carousel .prev{
+        left: 0;
+    }
+    .carousel .next{
+        right: 0;
+    }
 }
 @media (max-width: 992px){
     .advantages{
@@ -34,6 +45,17 @@
     }
     .consultation{
         padding: 100px 25px 92px 25px;
+    }
+    .catalog{
+        &__content{
+            justify-content: space-around; 
+        }
+        &__tab{
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+            line-height: 40px
+        }
     }
 }
 @media (max-width: 768px){
@@ -87,10 +109,84 @@
             font-size: 23px;
         }
     }
-    .consultation__descr{
-        font-size: 17px;
-    }
     
+    .consultation{
+        .consultation__descr{
+            font-size: 17px;
+        }
+        .feed-form{
+            width: 250px;
+            input{
+                height:37px;
+                font-size: 12px;
+            }
+        }
+        .button_submit{
+            height: 40px;
+            font-size: 13px;
+        }
+    }
+    .carousel .tns-item img{
+            width: 450px;
+        }
+    .carousel .next, .carousel .prev{
+        display: none;
+    }
+    .tns-outer{
+        button{
+            display: none;
+        }
+    }
+    .catalog{
+        .title{
+            font-size: 22px;
+        }
+        &-item{
+            width: 250px;
+            padding: 20px 10px 26px 10px;
+            &__subtitle{
+                font-size: 14px;
+            }
+            &__descr{
+                margin-top: 14px;
+                font-size: 12px;
+            }
+            &__ling {
+                font-size: 14px;
+            }
+            hr{
+                margin-top: 5px;
+            }
+            &__old-price{
+                font-size: 12px;
+            }
+            &_prace{
+                font-size: 17px;
+            }
+            .button_mini{
+                width: 115px;
+                height: 35px;
+            }
+        }
+        &__tab{
+            width: 155px;
+            height: 35px;
+            font-size: 14px;
+            line-height: 32px;
+        }
+    }
+    .reviews{
+        &__item-img{
+            max-width: 150px;
+            max-height: 150px;
+        }
+        &__item-repsonal{
+            margin-left: 40px;
+        }
+        &__item-repsonal_descr{
+            font-size: 13px;
+        }
+    }
 }
 @media (max-width: 571px){
     .promo{
@@ -157,5 +253,36 @@
     }
     .consultation__descr{
         font-size: 15px;
+    }
+    .carousel .tns-item img{
+            width: 350px;
+    }
+    .catalog .title{
+        font-size: 19px;
+    }
+    .catalog__tab {
+        width: 84px;
+        height: 27px;
+        font-size: 8px;
+        line-height: 25px;
+    }
+    .reviews__item{
+        display: block;
+        &-img{
+            display: block;
+            margin: 0 auto;
+        }
+        &-repsonal{
+            margin-top: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+            text-align: center;
+        }
+        &-repsonal_descr{
+            span{
+                line-height: 25px;
+            }
+        }
+        
     }
 }
