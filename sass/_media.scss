@@ -48,6 +48,9 @@
         &__social-item{
             width: 40px;
             height: 40px;
+            img{
+                height: 21px;
+            }
         }
     }
 }
@@ -225,8 +228,7 @@
         &__social-item{
             margin: 0 20px;
             img{
-                width: 40px;
-                height: 40px;
+                height: 21px;
             }
         }
     }
@@ -309,6 +311,9 @@
         font-size: 8px;
         line-height: 25px;
     }
+    .reviews{
+        padding-bottom: 120px;
+    }
     .reviews__item{
         display: block;
         &-img{
@@ -337,27 +342,28 @@
             padding: 7px 0px 10px 0px;
             left: 100%;
             transform: translateX(-100%);
+            top: -50px;
         }
         &__addr{
             font-size: 10px;
-            line-height: 15px;
-            margin-bottom: 22px;
+            line-height: 39px;
+            margin-bottom: 0px;
         }
         &__phone{
             font-size: 10px;
-            line-height: 15px; 
-            margin-bottom: 22px; 
+            line-height: 39px; 
+            margin-bottom: 0px; 
         }
         &__social{
-        
+            margin-top: 4px;
         }
         &__social-item{
             margin: 0 5px;
-            width: 35px;
-            height: 35px;
+            width: 30px;
+            height: 30px;
             img{
-                width: 35px;
-                height: 35px;
+                height: 17px;
+
             }
         }
     }
