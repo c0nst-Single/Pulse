@@ -23,7 +23,7 @@
                 </div>
                 <div class="header_contacts">
                     <a href="tel: +74999228974" class="header_phone">+7 (499) 922-89-74</a>
-                    <button class="button">заказать звонок</button>
+                    <button data-modale="consultation" class="button">заказать звонок</button>
                 </div>
             </header>
             <div class="promo_wrapper">
@@ -40,7 +40,7 @@
                         <img src="images/header_icon/header_icon-maseg.svg" alt="maseg">Ответим на все вопросы
                     </div>
                 </div>
-                <button class="button button_main">заказать консультацию</button>
+                <button data-modale="consultation" class="button button_main">заказать консультацию</button>
                 <div class="promo_link">
                     или
                     <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
@@ -144,7 +144,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="images/catalog/catalog_img.png" alt="pulsumetr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__subtitle">Пульсометр Suunto M2</div>
                             <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="#" class="catalog-item__ling">подробнее</a>
                         </div>
@@ -411,17 +411,36 @@
     </footer>
 
     <div class="overlay">
-        <div class="modale">
+        <div class="modale" id="consultation">
             <div class="modale__close"> &times; </div>               <!-- спец символ -->
-            <div class="modale__subtitle"></div>
-            <div class="modale__descr"></div>
-            <form class="feed-form" action="#">
+            <div class="modale__subtitle">Просто заполните форму заявки</div>
+            <div class="modale__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed-form feed-form_mt25" action="#">
                     <input name="name" required placeholder="Ваше имя" type="text"> 
                     <input name="phone" placeholder="Ваш телефон" type="number"> 
                     <input name="email" required placeholder="Ваше E-mail" type="text"> 
                     <!-- <input type="submit" value="закачать консультацию"> -->
                      <button class="button button_submit">закачать консультацию</button>
             </form>
+        </div>
+
+        <div class="modale" id="order">
+            <div class="modale__close"> &times; </div>               <!-- спец символ -->
+            <div class="modale__subtitle">Ваш заказ:</div>
+            <div class="modale__descr">Пульсометр Polar FT1</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                    <input name="name" required placeholder="Ваше имя" type="text"> 
+                    <input name="phone" placeholder="Ваш телефон" type="number"> 
+                    <input name="email" required placeholder="Ваше E-mail" type="text"> 
+                    <!-- <input type="submit" value="закачать консультацию"> -->
+                     <button class="button button_submit">купить</button>
+            </form>
+        </div>
+
+        <div class="modale modale_mini" id="thanks">
+            <div class="modale__close"> &times; </div>               <!-- спец символ -->
+            <div class="modale__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modale__descr">Наш менеджер свяжется с вами <br> в ближайшее время!</div>
         </div>
     </div>
     
