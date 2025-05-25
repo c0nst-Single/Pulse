@@ -100,4 +100,59 @@ $(document).ready(function () {
       $(".overlay , #order").fadeIn("fast");
     });
   });
+  // $("#consultation-form").validate();
+  // $("#consultation form").validate({
+  //   rules: {
+  //     name: {
+  //       required: true,
+  //       minlength: 2,
+  //     },
+  //     phone: "required",
+  //     email: {
+  //       required: true,
+  //       email: true,
+  //     },
+  //   },
+  //   messages: {
+  //     name: {
+  //       required: "Пожалуйсто введите свое имя",
+  //       minlength: jQuery.validator.format("Не меньше {0} символов"),
+  //     },
+  //     phone: "Пожалуйсто введите свой телефон",
+  //     email: {
+  //       required: "Пожалуйсто введите свою почту",
+  //       email: "Некорректный адресс почты",
+  //     },
+  //   },
+  // });
+  // $("#order form").validate();
+  function validateForms(form) {
+    $(form).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2,
+        },
+        phone: "required",
+        email: {
+          required: true,
+          email: true,
+        },
+      },
+      messages: {
+        name: {
+          required: "Пожалуйсто введите свое имя",
+          minlength: jQuery.validator.format("Не меньше {0} символов"),
+        },
+        phone: "Пожалуйсто введите свой телефон",
+        email: {
+          required: "Пожалуйсто введите свою почту",
+          email: "Некорректный адресс почты",
+        },
+      },
+    });
+  }
+  validateForms("#consultation-form");
+  validateForms("#consultation form");
+  validateForms("#order form");
 });
