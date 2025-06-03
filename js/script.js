@@ -155,4 +155,25 @@ $(document).ready(function () {
   validateForms("#consultation-form");
   validateForms("#consultation form");
   validateForms("#order form");
+  $("input[name=phone]").mask("+7 999-999-99-99");
+
+  $("form").submit(function (e) {
+    e.preventDefault();
+
+    if (!$(this).valide()) {
+      //проверяет на наличие данных в форме
+      return;
+    }
+    $.ajax({
+      type: "POST", // что делаем?(отпровляем)
+      url: "mailer/smart.php", // куда отпровляем
+      data: $(this).serialize(), // данные которые нужно отправить
+    }).done(function () {
+      $(this).find("input").val(""); //очистить поля после отправки
+      $("#consultation, #order").fadeOut(); //закрывает окна после отправки
+      $(".overlay, #thanks").fadeIn("slow"); //открывет после отправки
+      $("form").trigger("reset"); //очистить поля после отправки
+    });
+    return false;
+  });
 });
