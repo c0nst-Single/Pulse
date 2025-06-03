@@ -1,0 +1,11 @@
+@keyframes heartbeat{
+    from{                    // первый ключевой кадр(изначальный размер 1 = 100%)
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.4);     //увеличение на 10%
+    }
+    to{
+        transform: scale(1);      // исходный размер
+    }
+}

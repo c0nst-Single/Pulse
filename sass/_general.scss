@@ -32,7 +32,19 @@
             span{
                 color: #ff0000;
                 text-transform: uppercase;
+                animation-timing-function: ease;
             }
         }
     }
+    &_item-animated{
+        animation: heartbeat 2s ease infinite;    //все свойства ниэе в одной строке(важен порядок)
+        // animation-name: heartbeat;      // указываем имя анимации с написсанными свойствами
+        // animation-duration: 2s;         // время анимации (обязательно!)
+        // animation-timing-function: ease;         // ход ищминения анимации
+        // animation-iteration-count: infinite;    // сколько раз анимация повторится (бесконечность)
+        &:hover{    
+            animation-play-state: paused;
+        }
+    }
 }
+

@@ -2,10 +2,14 @@
     box-sizing: border-box;
     font-family: 'Museo Sans Cyrl 500';
 }
+html {
+  scroll-behavior: smooth;
+}
 
 @import "mixins";
 @import "variable";
 @import "../fonts/stylesheet.css";
+@import "animation";
 @import "general";
 @import "blocks/titles";
 @import "blocks/consultation"; 
@@ -15,6 +19,8 @@
 @import "blocks/reviews";
 @import "blocks/footer";
 @import "blocks/modale";
+@import "blocks/pageup";
+
 @import "media";
 
 .container{

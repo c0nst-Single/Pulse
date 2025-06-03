@@ -176,4 +176,13 @@ $(document).ready(function () {
     });
     return false;
   });
+
+  //smooth scroll
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1600) {
+      $(".pageup").fadeIn();
+    } else {
+      $(".pageup").fadeOut();
+    }
+  });
 });
