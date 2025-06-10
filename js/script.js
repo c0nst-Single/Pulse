@@ -74,7 +74,9 @@ $(document).ready(function () {
         $(".catalog-item__content")
           .eq(i)
           .toggleClass("catalog-item__content_active");
-        $(".catalog-item__list").eq(i).toggleClass("catalog-item__list_active");
+        $(".catalog-item__inner")
+          .eq(i)
+          .toggleClass("catalog-item__inner_active");
       });
     });
   }
@@ -185,4 +187,5 @@ $(document).ready(function () {
       $(".pageup").fadeOut();
     }
   });
+  new WOW().init();
 });
